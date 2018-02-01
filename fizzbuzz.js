@@ -5,7 +5,8 @@
 
 // Solution 1 - key part is most restrictive condition should be first_name
 // if (i % 15) was after other program would never get there
-for(let i =1; i <100; i++) {
+function fizzbuzz(){
+for(let i =1; i <=100; i++) {
   if (i % 15 === 0){
     console.log('fizzbuzz')
   } else if (i % 3 === 0) {
@@ -16,15 +17,21 @@ for(let i =1; i <100; i++) {
     console.log(i)
   }
 }
+}
 
-// aolves the issue of finding multiples of both by using += 
-for(let i =1; i <100; i++) {
+// aolves the issue of finding multiples of both by using +=
+function fizzAnything(length,fizzNumber,buzzNumber){
+for(let i =1; i <=length; i++) {
   msg = ''
-  if (i % 3 === 0){
+  if (i % fizzNumber === 0){
     msg += 'fizz'
   }
-  if (i % 5 === 0) {
+  if (i % buzzNumber === 0) {
     msg += 'buzz'
   }
   console.log(msg ||i)
 }
+}
+
+fizzbuzz()
+fizzAnything(100,3,5)
