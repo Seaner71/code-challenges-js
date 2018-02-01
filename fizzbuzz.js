@@ -35,3 +35,4 @@ for(let i =1; i <=length; i++) {
 
 fizzbuzz()
 fizzAnything(100,3,5)
+fizzAnything(200,7,8)
