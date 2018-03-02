@@ -20,7 +20,7 @@ function howManyGifts(maxBudget, gifts){
     if (maxBudget -gifts[i] >= 0) {
     // decrement the budget by amount of the gift
       maxBudget -= gifts[i]
-      // increment the counter
+      
       count +=1
     }
   }
