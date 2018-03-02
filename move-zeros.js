@@ -29,7 +29,7 @@ var refactoredMoveZeros = function (arr) {
   var zeroArray = arr.filter(x => x === 0);
   var cleanArray = arr.filter(x => x!== 0)
   // concatenate the zeroArray to the cleanArray
-
+  // log and return the array
   console.log(cleanArray.concat(zeroArray))
   return cleanArray.concat(zeroArray)
 }
