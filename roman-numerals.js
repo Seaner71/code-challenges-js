@@ -5,6 +5,7 @@ function toRoman(num) {
   for (let i = 0; i < decimal.length; i++) {
     while (num%decimal[i]<num){
       result += roman[i];
+      console.log(num);
       num -= decimal[i];
     }
   }
